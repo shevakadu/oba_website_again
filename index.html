@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Open Branding Awards.</title>
+	<link href="index_stuff/styles.css" rel="stylesheet" type="text/css" media="screen">
+	<script src="index_stuff/script.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="height: calc(100vh - 16px)">
+	<div id="hat">
+		<a onClick="document.getElementById('frame').src = 'static_pages/OBA.html'"><img style="margin: 15px; margin-left: 25px; margin-top: 15px" src="index_stuff/images/OBA_Logo_04.svg"
+			 height="70" alt="super cool and super epic logo!"/></a>
+		<div id="menu-closed" 
+			  style="float: right; margin: 20px; width: 30px; margin-top: 50px; margin-right: 35px; height: 30px; color: #909090" 
+			  onClick="document.getElementById('menu-closed').style.display = 'none';
+					   document.getElementById('menu-open').style.display = 'block';
+					   document.getElementById('menu').style.display = 'inherit';
+					   console.log('are you logged in??:' + localStorage.OBAaccount_loggedIn)
+					   if (localStorage.OBAaccount_loggedIn == false) {
+					   document.getElementById('login-state').textContent = 'ВЫ НЕ ВОШЛИ В АККАУНТ';
+					   } else {
+					   document.getElementById('login-state').textContent = 'ВЫ ВОШЛИ В АККАУНТ';
+					   }">
+			<div class="cross"></div>
+		</div>
+		<div id="menu-open" 
+			  style="float: right; margin: 20px; transform: rotate(45deg); margin-top: 50px; margin-right: 35px; display: none; color: #909090" 
+			  onClick="document.getElementById('menu-closed').style.display = 'block';
+					   document.getElementById('menu-open').style.display = 'none';
+					   document.getElementById('menu').style.display = 'none';">
+			<div class="cross"></div>
+		</div>
+	</div>
+	
+	<div id="menu" style="/*display: block !important;*/">
+		<bullet></bullet><a onClick="change_page('static_pages/about_us.html');">О НАС</a><br>
+		<bullet></bullet><a onClick="change_page('static_pages/partners.html');">ПАРТНЕРЫ</a><br>
+		<bullet></bullet><a onClick="toggle_subsection('jury-subsection');">ЖЮРИ</a><br>
+			<div id="jury-subsection" class="menu-subselection" style="display: none">
+                <a onClick="change_page('static_pages/jury.html')">ЖЮРИ</a><br>
+                <a onClick="change_page('static_pages/voting/voting-categories.html')">ГОЛОСОВАНИЕ</a><br>
+            </div>
+		<bullet></bullet><a onClick="change_page('static_pages/schedule.html')">ПРОГРАММА</a><br>
+		<bullet></bullet><a onClick="change_page('static_pages/account.html')">КАБИНЕТ УЧАСТНИКА</a><br>
+		<bullet></bullet><a onClick="change_page('static_pages/organization.html')">ОРГАНИЗАТОРЫ</a><br>
+		<bullet></bullet><a onClick="change_page('static_pages/contacts.html')">КОНТАКТЫ</a><br>
+		<bullet></bullet><a onClick="change_page('static_pages/networks.html')">СОЦСЕТИ</a><br>
+		<bullet></bullet><a onClick="toggle_subsection('archive-subsection')">АРХИВ</a><br>
+			<div id="archive-subsection" class="menu-subselection" style="display: none">	
+                <a onClick="change_page('static_pages/archive/2021.html')">2021</a><br>
+                <a onClick="change_page('static_pages/archive/2022.html')">2022</a><br>
+                <a onClick="change_page('static_pages/archive/2023.html')">2023</a><br>
+            </div>
+	</div>
+	
+<!--
+	<div id="menu">
+		<span id="login-state">ВЫ НЕ ВОШЛИ В АККАУНТ</span><br>
+		<bullet></bullet><a onClick="account_page()">ВХОД</a><br><br>
+		<bullet></bullet><a onClick="change_page('static_pages/about_us.html');">О НАС</a><br>
+		<bullet></bullet><a onClick="toggle_subsection('jury-subsection');">ЖЮРИ</a><br>
+			<div id="jury-subsection" class="menu-subselection" style="display: none">
+                <a onClick="change_page('static_pages/archive/jury.html')">ЖЮРИ</a><br>
+                <a onClick="change_page('static_pages/jury-login.html')">ГОЛОСОВАНИЕ</a><br>
+            </div>
+		<bullet></bullet><a onClick="change_page('static_pages/awards.html');">НАГРАДЫ</a><br>
+		<bullet></bullet><a onClick="change_page('static_pages/schedule.html')">ПРОГРАММА</a><br>
+		<bullet></bullet><a onClick="change_page('static_pages/about_us.html');">ПАРТНЕРЫ</a><br>
+		<bullet></bullet><a onClick="toggle_subsection('archive-subsection')">АРХИВ</a><br>
+			<div id="archive-subsection" class="menu-subselection" style="display: none">	
+                <a onClick="change_page('static_pages/archive/winners.html')">ПОБЕДИТЕЛИ</a><br>
+                <a onClick="change_page('static_pages/archive/jury.html')">ЖЮРИ</a><br>
+                <a onClick="change_page('static_pages/archive/media.html')">ФОТО И ВИДЕО</a><br>
+            </div>
+		<bullet></bullet>КОНТАКТЫ<br>
+-->
+			
+<!--
+		<bullet></bullet><a onClick="toggle_subsection('news-subsection');">НОВОСТИ</a><br>
+		<div id="news-subsection" class="menu-subselection" style="display: none">
+			<a onClick="change_page('pages/gallery/news-photos.html');">ФОТО</a><br>
+			<a onClick="change_page('pages/gallery/news-videos.html')">ВИДЕО</a><br>
+			<a onClick="change_page('pages/news-texts.html')">РЕПОРТАЖИ</a><br><br>
+		</div>
+		
+		
+		<bullet></bullet><a onClick="toggle_subsection('event-subsection');">КОНКУРСЫ</a><br>
+		<div id="event-subsection" class="menu-subselection" style="display: none">
+			<a onClick="change_page('pages/aaaa.html')">ПОЛОЖЕНИЕ</a><br>
+			НАГРАДЫ<br>
+			СТОИМОСТЬ<br>
+			НОМИНАЦИИ<br>
+			ТРЕБОВАНИЯ<br>
+		</div>
+		
+		<div onClick="toggle_subsection('ticket-subsection');"><bullet></bullet>ПОДАТЬ РАБОТУ<br>
+		<span style="margin-left: 30px;">КУПИТЬ БИЛЕТ</span><br>
+		<span style="margin-left: 30px;">АККРЕДИТАЦИЯ</span><br></div>
+		<div id="ticket-subsection" class="menu-subselection" style="display: none">
+			<a onClick="change_page('pages/works-tutorial.html')">ИНСТРУКЦИЯ ПО ЗАПОЛНЕНИЮ ЗАЯВКИ<br>																	ЗАЯВКА НА УЧАСТИЕ</a><br>
+			<a onClick="change_page('pages/works-register.html')">РЕГИСТРАЦИЯ</a><br>
+			<a onClick="change_page('pages/works-submit.html')">ПОДАТЬ РАБОТУ</a><br>
+			<a onClick="change_page('pages/works-pay.html')">ОПЛАТИТЬ</a><br>
+			<a onClick="change_page('pages/works-login.html')">ВХОД</a><br>
+		</div>
+
+		<br>
+		
+		<bullet></bullet><a onClick="change_page('pages/helloooo_wakeup.html')">ГОЛОСОВАНИЕ</a><br>
+		<bullet></bullet><a onClick="change_page('pages/works.html')">РАБОТЫ</a><br>
+		<bullet></bullet><a onClick="change_page('pages/shortlist.html')">ШОРТЛИСТ</a><br>
+		<bullet></bullet><a onClick="change_page('pages/winners.html')">ПОБЕДИТЕЛИ</a><br>
+-->
+		
+<!--
+			<br>
+			<br>
+-->
+			
+<!--	</div>	<br>-->
+	
+	
+	<div id="main">
+		<iframe id="frame" width="100%" height="100%" frameborder="0" scrolling="yes" src="static_pages/OBA.html">
+		</iframe>
+	</div>
+</body>
+</html>
