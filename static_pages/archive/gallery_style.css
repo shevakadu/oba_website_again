@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: 'Arial';
+	font-size: 1rem;
+}
+
+bullet {
+	float: left;
+	width: 20px;
+	height: 10px;
+	background-color: #BB9959;
+	margin-right: 10px;
+	margin-top: 8px;
+}
+
+subheader {
+	/*font-size: 19px;*/
+	text-transform: uppercase;
+}
+
+superheader {
+	font-size: 24px;
+	color: #87623E
+}
+
+subselection, subselection div {
+	font-size: 0.9em;
+	line-height: 25px;
+	margin-left: 60px;
+	color: #87623E;
+	text-transform: uppercase;
+}
+
+subselection div {
+	font-size: 1em;
+	margin-bottom: -15px;
+	margin-top: -15px;
+}
+
+break {
+    display: block; /* makes it have a width */
+    content: ""; /* clears default height */
+	margin-top: 10px; /* change this to whatever height you want it */
+}
+
+#main-space, .main-space {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+/*	align-items: center;*/
+	align-content: stretch;
+	gap: 20px;
+	padding-top: 10px;
+}
+
+.item {
+/*	background-color: aqua;*/
+	width: 305px;
+	height: 445px;
+	padding: 15px;
+	
+/*	background-color: #E1E1E1*/
+}
+
+.item-image {
+	width: 305px;
+	height: 305px;
+	margin: 5px 0 15px 0;
+	
+	background-color: #BABABA
+}
+
+.item-header {
+	width: 100%;
+	height: 48px
+}
+
+.item-description {
+	width: 100%;
+	height: 68px;
+	
+}
+
+/*
+445 - 15 - 15
+
+415 - (305 + 15 + 15)
+*/
