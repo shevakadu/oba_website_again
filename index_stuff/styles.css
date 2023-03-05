@@ -1,0 +1,103 @@
+/* CSS Document */
+
+body {
+	font-family: Arial;
+	zoom: 1;
+}
+
+bullet {
+	float: left;
+	width: 20px;
+	height: 10px;
+	background-color: #BB9959;
+	margin-right: 10px;
+	margin-top: 11px;
+}
+
+#hat {
+	background-color: #000;
+	color: #FFF;
+	margin: 0;
+	width: calc(100% - 16px);
+	margin-top: 7px;
+	position: absolute;
+	top: 0;
+	z-index: 2;
+}
+
+.cross {
+   width: 30px;
+   height: 30px;
+   position: relative;
+}
+
+.cross:before, .cross:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #909090;
+}
+
+.cross:before {
+  left: 50%;
+  width: 10%;
+  margin-left: -5%;
+  height: 100%;
+}
+
+.cross:after {
+  top: 50%;
+  height: 10%;
+  margin-top: -5%;
+  width: 100%;
+}
+
+#menu {
+	background-color: #FFFFFF;
+	color: #000000;
+	line-height: 30px;
+	position: absolute;
+	width: calc(100% - 66px);
+	height: calc(100% - 170px);
+	top: 111px;
+	display: none;
+	padding: 25px;
+	z-index: 2;
+	overflow-y: scroll;
+	font-size: 1rem;
+}
+
+.menu-subselection {
+	font-size: 0.9em;
+	line-height: 25px;
+	margin-left: 60px;
+	color: #87623E;
+}
+
+#main {
+	position: relative;
+	top: 102px;
+	width: calc(100% - 0px);
+	height: calc(100% - 105px);
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.stuff {
+	position: relative;
+}
+
+#footer {
+	background-color: #000;
+	color: #FFF;
+	margin-left: 0px;
+	width: calc(100% - 26px);
+	font-size: 8px;
+	padding: 5px;
+	padding-bottom: 10px;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 8px;
+	z-index: 6;
+	display: block;
+}
