@@ -1,0 +1,254 @@
+@charset "utf-8";
+/* CSS Document */
+
+a {
+	text-decoration: none;
+	color: #000000
+}
+
+body {
+	font-family: Arial;
+	overflow-y: scroll;
+	scrollbar-width: none;
+	line-height: 22px;
+	letter-spacing: 1.4px;
+	background-color: #FFFFFF;
+	padding: 17px;
+	zoom: 1;
+	font-size: 1rem;
+}
+
+bullet {
+	float: left;
+	width: 20px;
+	height: 10px;
+	background-color: #BB9959;
+	margin-right: 10px;
+	margin-top: 6px;
+}
+
+break {
+    display: block; /* makes it have a width */
+    content: ""; /* clears default height */
+	margin-top: 10px; /* change this to whatever height you want it */
+}
+
+separator {
+    display: block; /* makes it have a width */
+    content: ""; /* clears default height */
+	margin-top: 15px; /* change this to whatever height you want it */
+	margin-bottom: 15px;
+	width: 100%;
+	height: 2px;
+	background-color: #D6D6D6;
+}
+
+subheader {
+	/*font-size: 19px;*/
+	text-transform: uppercase;
+}
+
+
+superheader {
+	font-size: 24px;
+	color: #87623E;
+}
+
+subselection, subselection div {
+	font-size: 0.9em;
+	line-height: 25px;
+	margin-left: 60px;
+	color: #87623E;
+	text-transform: uppercase;
+}
+
+subselection a {
+	line-height: 25px;
+	color: #87623E;
+	text-transform: uppercase;
+}
+
+subselection div {
+	font-size: 1em;
+	margin-bottom: -5px;
+	margin-top: -15px;
+}
+
+#footer {
+	background-color: #000;
+	color: #FFF;
+	margin-left: 0px;
+	width: calc(100% - 26px);
+	font-size: 8px;
+	padding: 5px;
+	padding-bottom: 10px;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 8px;
+	z-index: 6;
+	display: block;
+}
+
+#main-space {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+	row-gap: 20px;
+}
+
+.subtext {
+	line-height: 22px
+}
+
+.image {
+	flex-basis: 100%;
+	flex-grow: 1;
+	flex-shrink: 1;
+	width: 100%;
+	/* background-color: aqua; */
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+}
+
+.image img {
+	width: 95%;
+	overflow-y: hidden;
+	margin-top: 2.5%;
+	margin-bottom: 5%;
+}
+
+.image div span {
+	font-size: 13px;
+}
+
+.image-description {
+	/* background-color: sandybrown; */
+	width: 95%;
+	margin-bottom: 2.5%;
+	min-height: 50px;
+	line-height: 20px;
+}
+
+/* Work submission wizard stuff */
+/* Work submission wizard stuff */
+/* Work submission wizard stuff */
+
+#welcome {
+	display: block;
+}
+
+.page, .questionnaire-page {
+	display: none;
+	transition: opacity 0.3s;
+	width: 100%;
+	height: calc(100vh - 100px);
+}
+
+.page input, .questionnaire-page input {
+	width: 100%;
+}
+
+.page textarea, .questionnaire-page textarea {
+	width: 100%;
+	height: 70%;
+	resize: none;
+	font-family: arial;
+}
+
+.questionnaire-page-submit {
+	position: absolute;
+	bottom: 20px
+}
+
+.questionnaire-page-back {
+	position: absolute;
+	bottom: 50px
+}
+
+/*
+.page textarea:invalid {
+	border: 2px dashed red;
+}
+*/
+
+#login-info, #register-info {
+	color: #FFFFFF;
+}
+
+/*
+#accountsolution-login-check, #accountsolution-register-submit {
+	position: absolute;
+	bottom: 15px
+}
+*/
+
+/* Moderator tools stuff */
+/* Moderator tools stuff */
+/* Moderator tools stuff */
+
+#login-interface {
+	position: absolute;
+	width: 95vw;
+	height: 100%;
+	margin: -20px -15px;
+	padding-top: 20px;
+	z-index: 10;
+	background-color: rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(5px);
+}
+
+#login-interface input {
+	width: calc(100% - 10px)
+}
+
+#login-form {
+	background-color: #FFFFFF;
+	box-shadow: 0 0 0px 5px rgba(125, 125, 125, 0.5);
+	padding: 20px;
+}
+
+@media all and (orientation:landscape)
+{
+	#the-image {
+		display: none
+	}	
+	#user-image {
+		width: 25%;
+		float: left;
+		margin-right: 25px;
+	}
+	#login-form {
+		width: calc(375px - 90px);
+		height: calc(667px - 90px);
+		margin-top: calc((667px - 70px) / 2 - );
+		margin-left: calc(50% - (375px - 70px)/ 2)
+	}
+}
+
+@media all and (orientation:portrait)
+{
+	#the-image {
+		display: block
+	}
+	#user-image {
+		width: 50%;
+		margin-left: 25%;
+		margin-bottom: 10px;
+	}
+	#user-description {
+		width: 100%;
+		text-align: center;
+	}
+	
+	#login-form {
+		width: calc(375px - 90px);
+		height: calc(667px - 90px);
+		margin: 0 auto;
+	}
+}

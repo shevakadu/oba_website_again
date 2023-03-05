@@ -1,0 +1,335 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>about_us</title>
+	<link href="embed_style.css" rel="stylesheet" type="text/css" media="screen">
+    
+</head>
+
+<body style="background-color: #FFFFFF; color: #000000;">
+	
+	<div style="width: 100%;">
+		<superheader>SUBMIT A WORK</superheader><break></break>
+		<div class="page" name="1" static="yes" id="welcome">
+			Добро пожаловать в форму отправки!<br>
+			На этой странице вы узнаете, как отправить работу в OBA.<br>
+			После того, как люди представят свои работы, выбранная группа работ будет рассмотрена жюри.
+			<br><br>
+			
+			<div style="text-align: left !important">
+			<span id="welcome-next"><bullet class="next-page"></bullet> ПРОДОЛЖИТЬ</span>
+			</div>
+			<br>
+		</div>
+		
+		<div class="page" name="1" static="yes" id="accountsolution">
+			Во-первых, каждый человек, отправляющий свои работы, должен иметь учетную запись.<br>
+			Вы уже создали учетную запись или хотите создать новую?
+			<br><br>
+			
+			<div style="text-align: left !important">
+			<span id="accountsolution-login"><bullet class="next-page"></bullet> ИСПОЛЬЗОВАТЬ СУЩЕСТВУЮЩУЮ</span><br><break style="margin-top: 5px"></break>
+			<span id="accountsolution-register"><bullet class="next-page"></bullet> СОЗДАТЬ НОВУЮ</span>
+			</div>
+			<br>
+		</div>
+		
+		<div class="page" name="1" static="yes" id="accountsolution-loginpage">
+			Используйте форму ниже для входа.
+			<br><br>
+			E-MAIL<br>
+			<input type="email" class="submittable-login" id="login-email" name="email"><br><break></break>
+			ПАРОЛЬ<br>
+			<input type="password" class="submittable-login" id="login-password" name="password"><br><br>
+			<span id="login-info">Oops! We couldn't find any accounts with this email!</span>
+			
+			<div style="text-align: left !important">
+		<span id="accountsolution-login-check"><bullet class="next-page"></bullet> ВОЙТИ<br><break style="margin-top: 5px"></break></span>
+<!--			<span id="accountsolution-register2"><bullet class="next-page"></bullet> CREATE A NEW ACCOUNT</span>-->
+			</div>
+			<br>
+		</div>
+		
+		<div class="page" name="1" static="yes" id="accountsolution-registerpage">
+			Создайте учетную запись ниже.<br>
+			Убедитесь, что вы заполнили все обязательные поля!
+			<br><br>
+			Агентство/компания<br>
+            <input class="submittable-register" name="agency" placeholder="обязательно" required><br><break></break>
+
+            E-mail адрес<br>
+            <input class="submittable-register" name="email" id="register-email" placeholder="обязательно" type="email" required><br><break></break>
+
+            Телефон<br>
+            <input class="submittable-register" name="phonenumber" placeholder="обязательно" type="tel" required><br><break></break>
+
+            ФИО контактного лица<br>
+            <input class="submittable-register" name="fullname" placeholder="обязательно" required><br><break></break>
+
+            Пароль<br>
+            <input class="submittable-register" name="password" id="register-password" placeholder="не менее восьми знаков" type="password" required><br><break></break>
+
+            Подтверждение пароля<br>
+            <input class="submittable-register" name="confirmpassword" placeholder="обязательно" type="password" required><br><break></break>
+
+<!--
+            Банковские реквизиты <small><small>не обязательно</small></small><br>
+            <input class="submittable-register" name="bankdetails" placeholder="The 16 numbers on the front"><br>
+			<input class="submittable-register" name="bankdetails" type="month" placeholder="Expiration date"><br>
+			<input class="submittable-register" name="bankdetails" placeholder="CCV/CVV, the 3 numbers on the back.">
+			<br><br>
+-->
+			
+			<span id="register-info">Oops! There was an error!</span>
+			<div style="text-align: left !important">
+			<span id="accountsolution-register-submit"><bullet class="next-page"></bullet> ПРОДОЛЖИТЬ<br><break style="margin-top: 5px"></break></span>
+<!--			<span id="accountsolution-register2"><bullet class="next-page"></bullet> CREATE A NEW ACCOUNT</span>-->
+			</div>
+			
+			<br>
+		</div>
+		
+		<div id="the-great-questionnaire">
+			<div name="1" index="branding-category" class="questionnaire-page">
+				Thanks for considering our awards!<br>
+				Let's begin!<br>
+				<br>
+				First, what is your branding category?<br><br>
+				
+				<select class="submittable" name="branding-category" id="branding-category">
+                    <option value="goods">Продуктовый (потребительский)</option>
+                    <option value="corporate">Корпоративный</option>
+                    <option value="retail">Ритейл</option>
+                    <option value="digital">Диджитал</option>
+                    <option value="misc">Прочее</option>
+				</select><br><br>
+				<small><small>p. s. please do not use single apostrophes (')<br>doing so will get your form denied.</small></small>
+				<br><br><break></break>
+				
+				<span class="questionnaire-page-submit"><bullet></bullet> NEXT</span>
+			</div>
+			
+			<div name="2" index="industry" class="questionnaire-page">
+				Next, what is your industry?<br><br>
+				
+				<select class="submittable" name="industry" id="industry">
+                    <option value="HoReCa">HoReCa</option>
+                    <option value="FMCG">FMCG</option>
+                    <option value="retail">Ритейл</option>
+                    <option value="medical">Медицинский кластер</option>
+                    <option value="food">Пищевая промышленность</option>
+                    <option value="agri">Сельское хозяйство</option>
+                    <option value="mechanic">Машиностроение</option>
+                    <option value="iron">Металлургия</option>
+                    <option value="finance">Финансы</option>
+                    <option value="services">Сфера услуг</option>
+                    <option value="media">Медиа</option>
+                    <option value="misc">Прочее</option>
+				</select><br><br><break></break>
+				
+				<span class="questionnaire-page-back"><bullet></bullet> BACK</span>
+				<span class="questionnaire-page-submit"><bullet></bullet> NEXT</span>
+			</div>
+			
+			<div name="3" index="product-description" class="questionnaire-page">
+				Now tell us what is your product.<br><br>
+				
+				<textarea class="submittable" name="product-description" maxlength="1000" placeholder="не более 1000 знаков"></textarea><br><br><break></break>
+				
+				<span class="questionnaire-page-back"><bullet></bullet> BACK</span>
+				<span class="questionnaire-page-submit"><bullet></bullet> NEXT</span>
+			</div>
+			
+			<div name="4" index="brand-name" class="questionnaire-page">
+				Please enter your brand below.<br><br>
+				<input class="submittable" name="brand-name"><br><br><break></break>
+				
+				<span class="questionnaire-page-back"><bullet></bullet> BACK</span>
+				<span class="questionnaire-page-submit"><bullet></bullet> NEXT</span>
+			</div>
+			
+			<div name="5" index="brand-idea" class="questionnaire-page">
+				Describe the idea of your brand.<br><br>
+				<textarea class="submittable" name="brand-idea" maxlength="500" placeholder="не более 500 знаков"></textarea><br><br><break></break>
+				
+				<span class="questionnaire-page-back"><bullet></bullet> BACK</span>
+				<span class="questionnaire-page-submit"><bullet></bullet> NEXT</span>
+			</div>
+			
+			<div name="6" index="brand-exityear" class="questionnaire-page">
+				Now, what year did your brand enter the market?<br><br>
+				<input type="number" class="submittable" maxlength="5" name="brand-exityear"><br><br><break></break>
+				
+				<span class="questionnaire-page-back"><bullet></bullet> BACK</span>
+				<span class="questionnaire-page-submit"><bullet></bullet> NEXT</span>
+			</div>
+			
+			<div name="7" index="brand-audience" class="questionnaire-page">
+				What is your brand's audience?<br><br>
+				<textarea class="submittable" name="brand-audience" maxlength="500" placeholder="не более 500 знаков"></textarea><br><br><break></break>
+				
+				<span class="questionnaire-page-back"><bullet></bullet> BACK</span>
+				<span class="questionnaire-page-submit"><bullet></bullet> NEXT</span>
+			</div>
+			
+			<div name="8" index="project-goal" class="questionnaire-page">
+				What is your project's goal?<br><br>
+				<textarea class="submittable" name="project-idea" maxlength="500" placeholder="не более 500 знаков"></textarea><br><br><break></break>
+				
+				<span class="questionnaire-page-back"><bullet></bullet> BACK</span>
+				<span class="questionnaire-page-submit"><bullet></bullet> NEXT</span>
+			</div>
+			
+			<div name="9" index="project-meters-before" class="questionnaire-page">
+				Tell us about your brand's statistics before.<br><br>
+				<textarea class="submittable" name="project-meters-before" maxlength="2000" placeholder="не более 2000 знаков (на Ваше усмотрение: знание бренда, доля рынка, показатели роста, ROI и т.д.)"></textarea><br><br><break></break>
+				
+				<span class="questionnaire-page-back"><bullet></bullet> BACK</span>
+				<span class="questionnaire-page-submit"><bullet></bullet> NEXT</span>
+			</div>
+			
+			<div name="10" index="project-meters-after" class="questionnaire-page">
+				Tell us about your brand's statistics after.<br><br>
+				<textarea class="submittable" name="project-meters-after" maxlength="2000" placeholder="не более 2000 знаков (на Ваше усмотрение: знание бренда, доля рынка, показатели роста, ROI и т.д.)"></textarea><br><br><break></break>
+				
+				<span class="questionnaire-page-back"><bullet></bullet> BACK</span>
+				<span class="questionnaire-page-submit"><bullet></bullet> NEXT</span>
+			</div>
+			
+			<div name="11" index="brand-success" class="questionnaire-page">
+				How would you describe your brand's success?<br><br>
+				<textarea class="submittable" name="brand-success" maxlength="1000" placeholder="не более 1000 знаков"></textarea><br><br><break></break>
+				
+				<span class="questionnaire-page-back"><bullet></bullet> BACK</span>
+				<span class="questionnaire-page-submit"><bullet></bullet> NEXT</span>
+			</div>
+			
+			<div name="12" index="metering" class="questionnaire-page">
+				What metering methods do you use?<br><br>
+                <select class="submittable" name="calculation" id="calculation">
+                    <option value="rates">Отраслевые оценки профильных асс...</option>
+                    <option value="research">Данные исследовательских компаний</option>
+                    <option value="self">Собственные замеры</option>
+                    <option value="misc">Иное</option>
+				</select><br><br><break></break>
+				
+				<span class="questionnaire-page-back"><bullet></bullet> BACK</span>
+				<span class="questionnaire-page-submit"><bullet></bullet> NEXT</span>
+			</div>
+			
+			<div name="13" index="market-state" class="questionnaire-page">
+				Describe the current state of the market.<br><br>
+				<textarea class="submittable" name="market-state" maxlength="2000" placeholder="не более 2000 знаков"></textarea><br><br><break></break>
+				
+				<span class="questionnaire-page-back"><bullet></bullet> BACK</span>
+				<span class="questionnaire-page-submit"><bullet></bullet> NEXT</span>
+			</div>
+			
+			<div name="14" index="market-obstacles" class="questionnaire-page">
+				What are the main obstacles and problems?<br><br>
+				<textarea class="submittable" name="market-obstacles" maxlength="1000" placeholder="не более 1000 знаков"></textarea><br><br><break></break>
+				
+				<span class="questionnaire-page-back"><bullet></bullet> BACK</span>
+				<span class="questionnaire-page-submit"><bullet></bullet> NEXT</span>
+			</div>
+			
+			<div name="15" index="brand-communication" class="questionnaire-page">
+				What are your brand's main means of communication with consumers?<br><br>
+				<textarea class="submittable" name="brand-communication" maxlength="100" placeholder="не более 100 знаков
+									   (Упаковку/ПОСМы/Диджитал/ТВ/Наружную рекламу и вывески/Радио/Иное)"></textarea><br><br><break></break>
+				
+				<span class="questionnaire-page-back"><bullet></bullet> BACK</span>
+				<span class="questionnaire-page-submit"><bullet></bullet> NEXT</span>
+			</div>
+			
+			<div name="16" index="success-factors" class="questionnaire-page">
+				Describe the factors which helped your brand's success.<br><br>
+				<textarea class="submittable" name="success-factors" maxlength="1000" placeholder="не более 1000 знаков"></textarea><br><br><break></break>
+				
+				<span class="questionnaire-page-back"><bullet></bullet> BACK</span>
+				<span class="questionnaire-page-submit"><bullet></bullet> NEXT</span>
+			</div>
+			
+			<div name="17" index="brand-philosophy" class="questionnaire-page">
+				What are your brand's main philosophies?<br><br>
+				<textarea class="submittable" name="brand-philosophy" maxlength="100" placeholder="не более 100 знаков"></textarea><br><br><break></break>
+				
+				<span class="questionnaire-page-back"><bullet></bullet> BACK</span>
+				<span class="questionnaire-page-submit"><bullet></bullet> NEXT</span>
+			</div>
+			
+			<div name="18" index="contacts" class="questionnaire-page">
+				You're almost there!<br>
+				Now we just need your name...<br><br>
+				<input class="submittable" name="surname" placeholder="Фамилия"><br>
+				<input class="submittable" name="name" placeholder="Имя"><br>
+				<input class="submittable" name="father-name" placeholder="Отчество"><br>
+				<input class="submittable" name="job" placeholder="Должность"><br><br>
+				
+				and your contact information.<br><br>
+				
+				<textarea class="submittable" name="contact-info" style="height: 100px" placeholder="Phone number, email or messenger tag"></textarea>
+				
+				<br><br><break></break>
+				
+				<span class="questionnaire-page-back"><bullet></bullet> BACK</span>
+				<span class="questionnaire-page-submit"><bullet></bullet> NEXT</span>
+			</div>
+			
+			<div name="19" index="video-url" class="questionnaire-page">
+				One last thing:<br><break></break>
+				We need a video containing all of the necessary information about your project.<br><break></break>
+				The video should not be longer than 3 minutes and needs to be uploaded somewhere.<br><break></break>
+				If you already have uploaded your video to a video hosting service like YouTube, please insert a URL pointing to the video in the field below.<br><br>
+				
+				<input class="submittable" name="video=url" type="url" placeholder="Video URL" required>
+				
+				<br><br><break></break>
+				
+				<span class="questionnaire-page-back"><bullet></bullet> BACK</span>
+				<span class="questionnaire-page-submit"><bullet></bullet> COMPLETE FORM</span>
+			</div>
+			
+			<div name="20" index="ending" class="questionnaire-page">
+				Congratulations!<br><break></break>
+				You have filled out the form needed to participate in the OBA!<br><break></break>
+				All there is left to do to submit your work is click the button below.<br><break></break>
+				Once you click the button below, everything you entered in the form is going to get collected and sent to the server, then linked to the account which you logged into or created on the authentification part.<br><break></break>
+				Clicking the button below means that you hereby and therefore agree to the OBA Terms and Conditions.<br><break></break>
+				Are you sure you would like to continue?
+				
+				<br><br><break></break>
+				
+				<span class="questionnaire-page-back"><bullet></bullet> GO BACK</span>
+				<span id="the-great-questionnaire-gateway"><bullet></bullet> CONTINUE</span>
+			</div>
+			
+			<div id="submission-progress" class="questionnaire-page" name="21" style="display: none">
+				Please wait, submission is in progress...<br>
+				<subselection><div id="submission-progress-console">
+						
+				</div></subselection>
+				<span class="questionnaire-page-back" id="submission-back" style="display: none"><bullet></bullet> BACK</span>
+			</div>
+			
+			<div id="submission-success" class="questionnaire-page" name="22" style="display: none">
+				<bullet></bullet><bullet></bullet><bullet></bullet><bullet></bullet><bullet style="background-color: #87623E"></bullet><br>
+				<bullet></bullet><bullet></bullet><bullet></bullet><bullet></bullet><bullet style="background-color: #87623E"></bullet><br>
+				<bullet style="background-color: #87623E"></bullet><bullet></bullet><bullet></bullet><bullet style="background-color: #87623E"></bullet><bullet></bullet><br>
+				<bullet></bullet><bullet style="background-color: #87623E"></bullet><bullet></bullet><bullet style="background-color: #87623E"></bullet><bullet></bullet><br>
+				<bullet></bullet><bullet></bullet><bullet style="background-color: #87623E"></bullet><bullet></bullet><bullet></bullet><br>
+				
+				<br>Congratulations!<br><break></break>
+				Your work has been successfully submitted!<br><break></break>
+				You can submit another project by restarting the submission wizard.<br><break></break>
+				
+<!--				<span class="questionnaire-page-back" id="submission-back" style="display: none"><bullet></bullet> BACK</span>-->
+			</div>
+		</div>
+	</div>
+	
+	<script src="submitwizard.js"></script>
+	</body>
+</html>
+	
