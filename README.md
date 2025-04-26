@@ -9,3 +9,5 @@ This is:
 
 and
 - has been replaced
+
+The credentials that can be found in app.js are not functional anymore.
