@@ -1,3 +1,0 @@
-Sorry for the node_modules folder!
-It is not heavy at all, but the thing is I wasn't supposed to upload it xD
-
