@@ -1,2 +1,10 @@
 # The OBA website repository!
-yayyyyays fsdgfsadgfjhasgfhjWSKDFjglhsad
+This is:
+- ancient
+- an old version
+- not in use anymore
+- bad
+- buggy
+- unreliable
+and
+- has been replaced
