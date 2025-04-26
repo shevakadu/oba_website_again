@@ -6,6 +6,6 @@ This is:
 - bad
 - buggy
 - unreliable
-- 
+
 and
 - has been replaced
